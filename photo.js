@@ -45,7 +45,7 @@ let photo4 = {
 
 
 //  function subirFotos(a){
-//   photo.insertMany([a])
+//   photo.insert(a)
 //   .then ( function(resp){
 //     console.log("documentos insertados correctamente");
 //     console.log(resp);
@@ -87,7 +87,7 @@ let photo4 = {
 
 
 // }
-// modificarFotos(params)
+// modificarFotos(photo2)
 
 // function eliminarFoto(params){
 //   photo.deleteOne({nombre:params.nombre , title:params.title })
@@ -104,7 +104,7 @@ let photo4 = {
 
 
 // function eliminarTodas(params){
-//   photo.delete({nombre:params.nombre , title:params.title })
+//   photo.delete({nombre:params.nombre })
 //   .then(function(result) {
 //       console.log('Fotos eliminadas:', result);
 //      })

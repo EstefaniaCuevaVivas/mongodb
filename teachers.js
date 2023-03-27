@@ -110,8 +110,7 @@ mongoose.connect(
 //   marks.aggregate([
 //     {
 //         $group: {
-//             _id: { student_first_name: "$student_first_name", student_last_name: "$student_last_name" },
-//             sumatorio: { $sum: 1 }
+//             _id: { student_first_name: "$student_first_name", student_last_name: "$student_last_name" }
 //         }
 //     },
 //     {
@@ -127,7 +126,7 @@ mongoose.connect(
 // });
 
 
-// teacher.aggregate([
+// marks.aggregate([
 //     {
 //         $group: {
 //             _id: { teacher_first_name: "$teacher_first_name", teacher_last_name: "$teacher_last_name" },
@@ -205,7 +204,7 @@ mongoose.connect(
   //   },
   //   {
   //     $group: {
-  //       _id: { subject_name: "$subject_name", teacher: { $concat: [ "$teachers.teacher_first_name", " ", "$teachers.teacher_last_name" ] } },
+  //       _id: { subject_name: "$subject_name" },
   //       total: { $sum: 1 }
   //     }
   //   }
