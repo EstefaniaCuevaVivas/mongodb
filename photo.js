@@ -90,7 +90,7 @@ let photo4 = {
 // modificarFotos(params)
 
 // function eliminarFoto(params){
-//   photo.deleteOne({nombre:params.nombre , title:params.title },{url:params.url})
+//   photo.deleteOne({nombre:params.nombre , title:params.title })
 //   .then(function(result) {
 //       console.log('Foto eliminada:', result);
 //      })
@@ -104,9 +104,9 @@ let photo4 = {
 
 
 // function eliminarTodas(params){
-//   photo.deleteOne({nombre:params.nombre , title:params.title },{url:params.url})
+//   photo.delete({nombre:params.nombre , title:params.title })
 //   .then(function(result) {
-//       console.log('Foto eliminada:', result);
+//       console.log('Fotos eliminadas:', result);
 //      })
 //        .catch(function(err) {
 //       console.error(err);
